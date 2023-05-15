@@ -71,12 +71,45 @@ HCF = HCF (Numerators) / LCM (Denominators)
 LCM = LCM (Numerators) / HCF (Denominators)
 
 7) Permutation and Combinations Basics
+Fcatorial -->
+
+Time complexity --> O(log n)
+Space complexity --> O(1)
+
+how to find a factorial -->
+eg. 4! = 4 * 3 * 2 * 1 = 24
+
+When the question is to count digits of factorial -->
+
+For best space and time complexity and counting numbers greater than 10^6;
+  We can use Kamenetsky’s formula to find our answer! 
+
+  It approximates the number of digits in a factorial by :
+  f(x) =    log10(((n/e)^n) * sqrt(2*pi*n))
+
+  Thus, we can pretty easily use the property of logarithms to,
+  f(x) = n* log10((n/e)) + log10(2*pi*n)/2 
+  
+  value of e = 2.71828182845904523536
+  
+  value of pi = 3.141592654
+
 
 8) Modular Arithmetic 
 If the user input provided would be a number which is large enough to not fit in int data type...modulo is used
 if the number is small enough then modular arithmetic can be found out by the formula ( a + b ) % m
 if the number is large then it can be found out by the formula ( a % m ) + ( b % m ) % m 
+Similarly, (a - b) % m = ( (a % m) - ( b % m) ) % m
+(a * b) % m = ( (a % m) * ( b % m) ) % m
 
+in case of division we have to find the modular inverse.
+Modular inverse --->
+( a * b ^ -1 ) % m 
 
-
-
+this can be solved by -->
+eg.  4 ^ -1 mod 7
+Formula -->  a * x = 1 ( mod m )
+let here a be 4 and m be 7
+( 4 * x ) mod 7 = 1
+therefore x must be 2 
+therefore the answer of  4 ^ -1 mod 7 = 2
